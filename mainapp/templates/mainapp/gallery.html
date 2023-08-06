@@ -1,0 +1,61 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="container-fluid gallery-bg pb-4">
+    <div class="container">
+        <div class="row m-1">
+            <div class="col justified-content-center my-md-4 text-center align-item-center">
+                <h2 class="sub-head font-color">Gallery</h2>
+            </div>
+        </div>
+
+        <div class="row align-item-center justify-content-center">
+            <div class="col-5 btn-group btn-group-md" role="group" aria-label="Basic outlined example">
+                <button type="button" data-filter="all" class="btn liss btn-outline-primary font-color">All</button>
+                <button type="button" data-filter="exterior" class="btn liss hov btn-pry">Exterior</button>
+                <button type="button" data-filter="interior" class="btn liss hov btn-pry">Interior</button>
+            </div>
+        </div>
+
+        <div class="row align-item-center my-4 p-2">
+            <div class="col-md-4 col-sm-6 col-lg-3 my-2 itembox interior">
+                <img src="{% static 'mainapp/assets/gallery/interior/ref2.png' %}" class="img-fluid bord rounded w-100" alt="interior image">
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 my-2 itembox exterior">
+                <img src="{% static 'mainapp/assets/gallery/exterior/ex4.png' %}" class="img-fluid bord rounded w-100" alt="exterior image">
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 my-2 itembox interior">
+                <img src="{% static 'mainapp/assets/gallery/interior/chap2.png' %}" class="img-fluid bord rounded w-100" alt="interior image">
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 my-2 itembox exterior">
+                <img src="{% static 'mainapp/assets/gallery/exterior/ex5.png' %}" class="img-fluid bord rounded w-100" alt="interior image">
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 my-2 itembox exterior">
+                <img src="{% static 'mainapp/assets/gallery/exterior/genhouse.png' %}" class="img-fluid bord rounded w-100" alt="interior image">
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 my-2 itembox exterior">
+                <img src="{% static 'mainapp/assets/gallery/exterior/sec.png' %}" class="img-fluid bord rounded w-100" alt="interior image">
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 my-2 itembox interior">
+                <img src="{% static 'mainapp/assets/gallery/interior/clinic1.png' %}" class="img-fluid bord rounded w-100" alt="interior image">
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 my-2 itembox interior">
+                <img src="{% static 'mainapp/assets/gallery/interior/ref1.png' %}" class="img-fluid bord rounded w-100" alt="interior image">
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 my-2 itembox exterior">
+                <img src="{% static 'mainapp/assets/gallery/exterior/sport.png' %}" class="img-fluid bord rounded w-100" alt="exterior image">
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 my-2 itembox exterior">
+                <img src="{% static 'mainapp/assets/gallery/exterior/solar1.png' %}" class="img-fluid bord rounded w-100" alt="interior image">
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3 my-2 itembox interior">
+                <img src="{% static 'mainapp/assets/gallery/exterior/sec.png' %}" class="img-fluid bord rounded w-100" alt="interior image">
+            </div>
+        </div>
+        
+
+</section>
+
+{% endblock content %}

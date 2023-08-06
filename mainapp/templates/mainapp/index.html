@@ -1,0 +1,254 @@
+{% extends "mainapp/base.html" %}
+{% load static %}
+
+{% block content %}
+<!-- Hero -->
+<div class="container-fluid hero">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-light my-3">Welcome</h1>
+            <h3 class="text-light my-3">To</h3>
+            <h1 class="text-light my-4">Holy Family Youth Village</h1>
+            <!-- <div class="row justify-content-center my-3 p-1">
+                <a href="./login page/login.html" class="btn btn-pri wow mx-3 shadow col-4">Login</a>
+                <a href="./register page/register.html" class="btn btn-sec  wow mx-3 shadow col-4">Register</a>
+            </div> {The login and register button for the hero section}-->
+        </div>
+    </div>
+</div>
+
+<!-- Section 1: Features -->
+<section class="container">
+    <div class="row align-items-start justify-content-center my-4"> 
+        
+        <div class="col-12 col-md-6">
+            <div class="row text-start mt-1 mb-3">
+                <div class="col">
+                    <h2 class="sub-head fs-1">Features</h2>
+                    <p class="lead fw-normal text-secondary">The hostel is fully packed with the following features:</p>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center my-3">
+                <!-- Card -->
+                <div class="col-12 col-md-6">
+                    <div class="card features-card shadow mb-3">
+                        <div class="card-body">
+                            <figure class="text-center">
+                                <img src="{% static 'mainapp/assets/undraw_electricity_k2ft.svg' %}" alt="fast-loading.png" height="100px">
+                            </figure>
+                            <h4 class="text-center my-2">24/7 Power</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card features-card shadow mb-3">
+                        <div class="card-body">
+                            <figure class="text-center">
+                                <img src="{% static 'mainapp/assets/security.svg' %}" alt="fast-loading.png" height="100px">
+                            </figure>
+                            <h4 class="text-center my-2">Security</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card features-card shadow mb-3">
+                        <div class="card-body">
+                            <figure class="text-center">
+                                <img src="{% static 'mainapp/assets/Map_Isometric.png' %}" alt="fast-loading.png" height="100px">
+                            </figure>
+                            <h4 class="text-center my-2">Location</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card features-card shadow mb-3">
+                        <div class="card-body">
+                            <figure class="text-center">
+                                <img src="{% static 'mainapp/assets/sport.png' %}" alt="fast-loading.png" height="100px">
+                            </figure>
+                            <h4 class="text-center my-2">Sport</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card end -->
+            </div>
+        </div>
+
+            <!-- feature carousel -->
+        <div class="col-12 col-md-6 ">
+            <div id="carouselExampleSlidesOnly" class="carousel card shadow col slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'mainapp/assets/hfyv5.JPG' %}" class="card-img-top mb-1" alt="security">
+                        <div class="card-body mb-2">
+                            <p class="card-title font-color fw-semibold fs-3">Sport</p>
+                            <p class="card-text fw-normal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'mainapp/assets/hfyv3.jpg' %}" class="card-img-top mb-1" alt="security">
+                        <div class="card-body mb-2">
+                            <p class="card-title font-color fw-semibold fs-3">Security</p>
+                            <p class="card-text fw-normal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'mainapp/assets/hfyv2.jpg' %}" class="card-img-top mb-1" alt="security">
+                        <div class="card-body mb-2">
+                            <p class="card-title font-color fw-semibold fs-3">Location</p>
+                            <p class="card-text fw-normal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'mainapp/assets/hfyv4.JPG' %}" class="card-img-top mb-1" alt="security">
+                        <div class="card-body mb-2">
+                            <p class="card-title font-color fw-semibold fs-3">24/7 Power</p>
+                            <p class="card-text fw-normal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Section 2: Gallery -->
+<section class="container-fluid gallery-bg pb-4">
+    <div class="container">
+        <div class="row m-1">
+            <div class="col justified-content-center my-5 text-center align-item-center">
+                <h2 class="sub-head">Gallery</h2>
+            </div>
+        </div>
+
+        <div class="row align-item-center justify-content-center">
+            <div class="col-10 col-md-4 my-2">
+                <div class="card features-card shadow-sm">
+                    <div id="carouselExampleSlidesOnly" class="card-body carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'mainapp/assets/hfyv1.jpg' %}" class="img-fluid rounded d-block w-100" alt="interior image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'mainapp/assets/hfyv5.JPG' %}" class="img-fluid rounded d-block w-100" alt="interior image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-4 my-2">
+                <div class="card features-card shadow-sm">
+                    <div id="carouselExampleSlidesOnly" class="card-body carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'mainapp/assets/hfyv2.jpg' %}" class="img-fluid rounded d-block w-100" alt="interior image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'mainapp/assets/hfyv4.JPG' %}" class="img-fluid rounded d-block w-100" alt="interior image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-4 my-2">
+                <div class="card features-card shadow-sm">
+                    <div id="carouselExampleSlidesOnly" class="card-body carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'mainapp/assets/hfyv3.jpg' %}" class="img-fluid rounded d-block w-100" alt="interior image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'mainapp/assets/hfyv5.JPG' %}" class="img-fluid rounded d-block w-100" alt="interior image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-4 my-2">
+                <div class="card features-card shadow-sm">
+                    <div id="carouselExampleSlidesOnly" class="card-body carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'mainapp/assets/hfyv2.jpg' %}" class="img-fluid rounded d-block w-100" alt="interior image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'mainapp/assets/hfyv3.jpg' %}" class="img-fluid rounded d-block w-100" alt="interior image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-4 my-2">
+                <div class="card features-card shadow-sm">
+                    <div id="carouselExampleSlidesOnly" class="card-body carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'mainapp/assets/hfyv1.jpg' %}" class="img-fluid rounded d-block w-100" alt="interior image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'mainapp/assets/hfyv4.JPG' %}" class="img-fluid rounded d-block w-100" alt="interior image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-4 my-2">
+                <div class="card features-card shadow-sm">
+                    <div id="carouselExampleSlidesOnly" class="card-body carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'mainapp/assets/hfyv1.jpg' %}" class="img-fluid rounded d-block w-100" alt="interior image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'mainapp/assets/hfyv5.JPG' %}" class="img-fluid rounded d-block w-100" alt="interior image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--    Testimonial     -->
+<section class="container">
+    <div class="row my-5 align-items-center justify-content-center">
+        <div id="carouselExampleControls" class="carousel m-1 slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <h2 class="testi-comment">Whenever I think of The Holy Family Youth Village, I think of a home. Being in Holy Family , I learnt how to be more cultured, more calculative and principled. Holy Family taught me to be a better version of my self.</h2>
+                    <h3 class="testi-name">Anthony Eboh</h3>
+                </div>
+                <div class="carousel-item">
+                    <h2 class="testi-comment">I just love Holy Family for everything; the enduring and understanding management lead by Fr. Dom, the surroundings for pictures, the security is superb. Holy Family is just the best!</h2>
+                    <h3 class="testi-name">Anunandu Chisom Sylvia</h3>
+                </div>
+                <div class="carousel-item">
+                    <h2 class="testi-comment">I am grateful and elated I reside in Holy Family Youth Village throughout my academic years. I have no ounce of regret whatsoever. HFYV is undoubtably the  best University hostel in Nigeria.</h2>
+                    <h3 class="testi-name">Oragwuncha Feechukwu</h3>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon text-info" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+    <!--    Join Social     -->
+<section class="container-fluid gallery-bg">
+    <div class="container">
+        <div class="row justify-content-center py-4 align-items-center">
+            <div class="col-8">
+                <p>Get Updates from Our Whatsapp Channel</p>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Join Us</button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

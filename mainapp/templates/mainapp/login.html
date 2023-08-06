@@ -1,0 +1,38 @@
+{% extends "mainapp/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid hero">
+    <div class="row container justify-content-center align-items-center">
+        <div class="col col-lg-6 col-md-8 my-4">
+            <div class="brd bg-white py-2">
+                <form action="#" class="needs-validation" novalidate method="post">
+                    <div class="align-content-center my-3 justify-content-center">
+                        <h3 class="fonts">Login</h3>
+                    </div>
+                    <div class="row mx-2 pt-3">
+                        <div class="col-12 form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col-12 form-floating mb-2">
+                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="align-content-start text-start mb-2  justify-content-center">
+                            <a href="#" class="text-decoration-none coll" target="_blank" rel="noopener noreferrer">Forgot Password?</a>
+                            
+                        </div>
+                        <div class="col-12 my-1 mt-2 p-1">
+                            <button type="submit" class="btn btn-lg btn-primary mb-3">Log In</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
