@@ -1,5 +1,5 @@
 from django.contrib.auth.forms import UserCreationForm
-# from django.contrib.auth import login, authenticate
+from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import SignUpForm
@@ -28,5 +28,16 @@ def register(request):
         form = SignUpForm()
     return render(request, 'mainapp/register.html',{'form': form})
 
-def login(request):
+def loginUser(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        user = authenticate(request, username=email, password=password)
+        if user is not None:
+            print(user)
+            login(request, user)
+            return redirect('/register')  # Redirect to student/admin account
+        else:
+            messages.error(request, 'Form error: %s')
+            return render(request, 'login')
     return render(request, 'mainapp/login.html')
