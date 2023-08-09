@@ -15,8 +15,3 @@ def faq(request):
 def about(request):
     return render(request, 'mainapp/about.html')
 
-def login(request):
-    return render(request, 'mainapp/login.html')
-
-def register(request):
-    return render(request, 'mainapp/register.html')

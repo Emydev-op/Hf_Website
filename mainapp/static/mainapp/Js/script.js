@@ -10,3 +10,7 @@ $(document).ready(function(){
         }
     })
 })
+
+// Aos init on scroll
+
+  window.onload = AOS.init();
