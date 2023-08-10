@@ -1,0 +1,228 @@
+{% extends 'students/base.html' %}
+{% load static %}
+
+  <!-- ======= Sidebar ======= -->
+  {% block nav %}
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="#">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="events.html">
+          <i class="bi bi-calendar-event"></i>
+          <span>Events</span>
+        </a>
+      </li><!-- End Event Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="payment.html">
+          <i class="bi bi-credit-card"></i>
+          <span>Payment</span>
+        </a>
+      </li><!-- End Payment Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-badge-ad"></i><span>Advert</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="adverts.html">
+              <i class="bi bi-circle"></i><span>Recent Advert</span>
+            </a>
+          </li>
+          <li>
+            <a href="adverts-add.html">
+              <i class="bi bi-circle"></i><span>Add Advert</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Advert Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="issues.html">
+          <i class="bi bi-exclamation-octagon"></i>
+          <span>Report Issues</span>
+        </a>
+      </li><!-- End Report Issue Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="election.html">
+          <i class="bi bi-check2-square"></i>
+          <span>Election</span>
+        </a>
+      </li><!-- End Election page Nav -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-blank.html">
+          <i class="bi bi-file-earmark"></i>
+          <span>Blank</span>
+        </a>
+      </li> End Blank Page Nav -->
+
+    </ul>
+
+  </aside>
+  {% endblock nav %}
+  <!-- End Sidebar-->
+
+  <!-- ======= Main`` ======= -->
+  {% block content %}
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Dashboard</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Sales Card -->
+        <div class="col-xxl-4 col-md-4">
+          <div class="card info-card sales-card">
+            <div class="card-body">
+              <h5 class="card-title">Room Number</h5>
+
+              <div class="d-flex align-items-center">
+                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="bx bxs-bed"></i>
+                </div>
+                <div class="ps-3">
+                  <h6>C4 <span class="text-warning pt-1 fw-bold">/ 27</span></h6>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- End Sales Card -->
+
+        <!--  Announcement  -->
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Recent Announcement</h5>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Archbishop Visit
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere earum, nam quia expedita blanditiis, hic quo facilis ipsum eius similique doloribus dolores nemo eaque voluptatem autem ratione, architecto a rem!</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Hostel Maintenance
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolores laudantium ea molestias repudiandae sunt quas, doloribus quam quo. Animi quasi accusantium, eum in qui possimus magni ratione molestiae maxime!</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Rent Renewal
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, repellendus hic aperiam nam modi repudiandae velit nobis atque iste, possimus odit suscipit veritatis quo libero optio vel? Similique, quisquam explicabo.</div>
+                  </div>
+                </div>
+              </div><!-- End Recent Announcement -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ====== card ====== -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Recent Announcement</h5>
+              
+              <!-- Table with stripped rows -->
+              <table class="table datatable">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Topic</th>
+                    <th scope="col">Details</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Archbishop Visit</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>2014-12-05</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Rent Renewal</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>2014-12-05</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Hostel Election</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>2011-08-12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Hostel Maintenance</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>2012-06-11</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Block Party</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>2011-04-19</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- End Table with stripped rows -->
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  {% endblock content %}
+  <!-- End #main -->
+

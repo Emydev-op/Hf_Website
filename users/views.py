@@ -34,10 +34,9 @@ def loginUser(request):
         password = request.POST.get('password')
         user = authenticate(request, username=email, password=password)
         if user is not None:
-            print(user)
             login(request, user)
-            return redirect('/register')  # Redirect to student/admin account
+            return redirect('students:home')  # Redirect to student/admin account
         else:
-            messages.error(request, 'Form error: %s')
-            return render(request, 'login')
+            messages.error(request, 'Invalid Username or Password')
+            return redirect('/login')
     return render(request, 'mainapp/login.html')
