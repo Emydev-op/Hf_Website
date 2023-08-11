@@ -8,6 +8,13 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     phoneNo = models.CharField(max_length=15, null=True, blank=True)
     roomId = models.CharField(max_length=10, null=True, blank=True)
+    department = models.CharField(max_length=40, null= True, blank=True)
+    # image = models.ImageField(default= 'mick.png', upload_to= 'images')
+    lga = models.CharField(max_length=40, null= True, blank=True)
+    stage_origin = models.CharField(max_length=40, null= True, blank=True)
+    religion = models.CharField(max_length=40, null= True, blank=True)
+    reg_no = models.CharField(max_length=40, null= True, blank=True)
+    # slug = models.SlugField(unique = True, null= True, blank = True)
     
     def __str__(self):
         return self.user.username

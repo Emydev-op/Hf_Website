@@ -24,7 +24,6 @@ def register(request):
             ValueError('Invalid username or password')
             messages.error(request, 'Invalid username or password')
     else:
-        messages.error(request, 'Form is not Post')
         form = SignUpForm()
     return render(request, 'mainapp/register.html',{'form': form})
 
