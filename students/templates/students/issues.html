@@ -8,21 +8,21 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link collapsed" href="{% url 'students:home' %}">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="events.html">
+        <a class="nav-link collapsed" href="{% url 'students:events' %}">
           <i class="bi bi-calendar-event"></i>
           <span>Events</span>
         </a>
       </li><!-- End Event Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="payment.html">
+        <a class="nav-link collapsed" href="{% url 'students:payment' %}">
           <i class="bi bi-credit-card"></i>
           <span>Payment</span>
         </a>
@@ -34,12 +34,12 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="adverts.html">
+            <a href="#">
               <i class="bi bi-circle"></i><span>Recent Advert</span>
             </a>
           </li>
           <li>
-            <a href="adverts-add.html">
+            <a href="#">
               <i class="bi bi-circle"></i><span>Add Advert</span>
             </a>
           </li>
@@ -54,14 +54,14 @@
       </li><!-- End Report Issue Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="{% url 'students:profile' %}">
           <i class="bi bi-person"></i>
           <span>Profile</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="election.html">
+        <a class="nav-link collapsed" href="{% url 'students:election' %}">
           <i class="bi bi-check2-square"></i>
           <span>Election</span>
         </a>

@@ -4,12 +4,12 @@ from . import views
 app_name= 'students'
 
 urlpatterns = [
-    path('', views.index, name= 'home'),
+    path('dashboard', views.index, name= 'home'),
     path('election', views.election, name= 'election'),
     path('events', views.events, name= 'events'),
     path('advert', views.advert, name= 'advert'),
     path('issues', views.issues, name= 'issues'),
-    path('payment', views.payments, name= 'election'),
+    path('payment', views.payments, name= 'payment'),
     path('profile', views.users_profiles, name= 'profile'),
     #path('/election', views.election, name= 'election'),
 ]

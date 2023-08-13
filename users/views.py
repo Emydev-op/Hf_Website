@@ -15,13 +15,9 @@ def register(request):
             user.profile.phoneNo = form.cleaned_data.get('phoneNo')
             user.first_name = form.cleaned_data.get('username')
             user.save()
-            # username = form.cleaned_data.get('username')
-            # raw_password = form.cleaned_data.get('password1')
-            # user = authenticate(username=username, password=raw_password)
-            # login(request, user)
+            messages.success(request, 'Profile created successfully')
             return redirect('/login')
         else:
-            ValueError('Invalid username or password')
             messages.error(request, 'Invalid username or password')
     else:
         form = SignUpForm()

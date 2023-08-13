@@ -9,7 +9,7 @@ class Profile(models.Model):
     phoneNo = models.CharField(max_length=15, null=True, blank=True)
     roomId = models.CharField(max_length=10, null=True, blank=True)
     department = models.CharField(max_length=40, null= True, blank=True)
-    image = models.ImageField(default= 'mick.png', upload_to= 'images', blank= True)
+    image = models.ImageField(default= 'mike.png', upload_to= 'images', blank= True)
     lga = models.CharField(max_length=40, null= True, blank=True)
     stage_origin = models.CharField(max_length=40, null= True, blank=True)
     religion = models.CharField(max_length=40, null= True, blank=True)
