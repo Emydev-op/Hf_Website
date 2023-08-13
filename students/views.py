@@ -6,6 +6,7 @@ from django.http import HttpResponse
 
 @login_required
 def index(request):
+    user = request.user
     return render(request, 'students/index.html')
 
 @login_required
@@ -30,4 +31,4 @@ def payments(request):
 
 @login_required
 def users_profiles(request):
-    return render(request,'students/users-profiles.html')
+    return render(request,'students/users-profile.html')

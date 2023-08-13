@@ -10,6 +10,6 @@ urlpatterns = [
     path('advert', views.advert, name= 'advert'),
     path('issues', views.issues, name= 'issues'),
     path('payment', views.payments, name= 'election'),
-    path('proflie', views.users_profiles, name= 'profile'),
+    path('profile', views.users_profiles, name= 'profile'),
     #path('/election', views.election, name= 'election'),
 ]
