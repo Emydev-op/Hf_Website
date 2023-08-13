@@ -88,7 +88,7 @@
       <h1>Dashboard</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="{% url 'students:home' %}">Home</a></li>
           <li class="breadcrumb-item active">Dashboard</li>
         </ol>
       </nav>
@@ -107,9 +107,15 @@
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                   <i class="bx bxs-bed"></i>
                 </div>
+                {% with room_id=user.profile.roomId %}
+                {% with first_two=room_id|slice:"0:2" %}
+                {% with last_two=room_id|slice:"-2:" %}
                 <div class="ps-3">
-                  <h6>C4 <span class="text-warning pt-1 fw-bold">/ 27</span></h6>
+                  <h6>{{ first_two|upper }} <span class="text-warning pt-1 fw-bold">/ {{ last_two }}</span></h6>
                 </div>
+                {% endwith %}
+                {% endwith %}
+                {% endwith %}
               </div>
             </div>
 
